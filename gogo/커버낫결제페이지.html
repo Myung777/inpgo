@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>톰브라운 결제 페이지</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/common_tmp.css">
+    <link rel="stylesheet" type="text/css" href="./css/shoppingbasket.css">
+    <link rel="stylesheet" type="text/css" href="./css/scrollbar.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/common.js"></script>
+    <script language=javascript>
+        function showAlert() {
+            alert("결제가 완료 되었습니다.\n처음 화면으로 돌아갑니다\n\n감사합니다.");
+            window.location.replace("./상품페이지.html");
+        }
+
+         function drawImage(){ 
+ var found = null; 
+ var buy = document.getElementsByName("b1"); 
+ var img = document.getElementById("fruitimage"); 
+
+ for(var i=0;i<buy.length;i++){ 
+ if(buy[i].checked == true){ 
+ found = buy[i]; 
+ } 
+ } 
+ img.src = found.value; 
+ }  
+    </script>
+  <style>
+        table {
+            border-collapse: collapse;
+        }
+        
+        table,
+        td,
+        th {
+            border: solid 1px #cccccc;
+        }
+        
+        tr {
+            height: 40px;
+            text-align: center;
+        }
+        
+        td,
+        th {
+            padding: 5px;
+        }
+
+        #col1 {
+            width: 90px;
+        }
+        
+        #col2{
+            width: 50px;
+            text-align: left;
+        }
+   </style>
+
+</head>
+
+<body>
+<header>
+  <section id="top">
+    <a id="logo" href="./index2.html"><img src="./img/inpgo.jpg" width="100" height="40"></a>
+    <div id="search"> 
+      <div id="search_title">SEARCH</div>
+      <div id="search_form"><input type="search"></div>
+      <div id="search_button"><img src="./img/btn_search.jpg" width="20" height="20"></div>
+    </div>
+    <nav id="top_menu">
+      <ul>
+        <li><a href="./index.html">로그아웃</a></li>
+        <li><a href="./회원가입.html">회원가입</a></li>
+        <li><a href="./마이페이지.html">마이페이지</a></li>
+        <li><a href="./이용안내.html">이용안내</a></li>
+        <li><a href="./고객센터.html">고객센터</a></li>
+      </ul>
+    </nav> 
+    <div class="clear"></div>
+  </section> 
+       <nav id="main_menu">
+            <div class="menu_wrapper">
+                <ul class="_menu">
+                    <li class="_main">
+                        <a href="./옷.html" class="menu_font">옷 </a>
+                        <ul class="_sub">
+                            <li class="menu_font1"><a href="./옷.html">전체보기</a></li>
+                            <li class="menu_font1"><a href="./남성용.html">남성용</a></li>
+                            <li class="menu_font1"><a href="./여성용.html">여성용</a></li>
+                            <li class="menu_font1"><a href="./유아용.html">유아용</a></li>
+                        </ul>
+                    </li>
+                    <li class="_main">
+                        <a href="./시계.html"class="menu_font">시계</a>
+                        <ul class="_sub">
+                            <li class="menu_font1"><a href="./시계.html">전체보기</a></li>
+                            <li class="menu_font1"><a href="./메탈시계.html">메탈시계</a></li>
+                            <li class="menu_font1"><a href="./가죽시계.html">가죽시계</a></li>
+                            <li class="menu_font1"><a href="./스마트워치.html">스마트워치</a></li>
+                        </ul>
+                    </li>
+                    <li class="_main">
+                        <a href="./가방.html"class="menu_font">가방 </a>
+                        <ul class="_sub">
+                            <li class="menu_font1"><a href="./가방.html">전체보기</a></li>
+                            <li class="menu_font1"><a href="./백팩.html">백팩</a></li>
+                            <li class="menu_font1"><a href="./토드백.html">토드백</a></li>
+                            <li class="menu_font1"><a href="./에코백.html">에코백</a></li>
+                        </ul>
+                    </li>
+                    <li class="_main">
+                        <a href="./신발.html"class="menu_font">신발</a>
+                        <ul class="_sub">
+                            <li class="menu_font1"><a href="./신발.html">전체보기</a></li>
+                            <li class="menu_font1"><a href="./구두.html">구두</a></li>
+                            <li class="menu_font1"><a href="./어글리.html">어글리</a></li>
+                            <li class="menu_font1"><a href="./슬리퍼.html">슬리퍼</a></li>
+                        </ul>
+
+                    </li>
+                     <li class="_main">
+                        <a href="./지갑.html"class="menu_font">지갑</a>
+                        <ul class="_sub">
+                            <li class="menu_font1"><a href="./여성지갑.html">여성지갑</a></li>
+                            <li class="menu_font1"><a href="./남성지갑.html">남성지갑</a></li>
+                            <li class="menu_font1"><a href="./카드지갑.html">카드지갑</a></li>
+                         
+                        </ul>
+                    
+                      </li>
+                    <li class="_main">
+                        <a href="./고객센터.html"class="menu_font">고객센터</a>
+                        <ul class="_sub">
+                            <li class="menu_font1"><a href="./고객센터.html">전체보기</a></li>
+                            <li class="menu_font1"><a href="./찾아오는길.html">찾아오는길</a></li>
+                            <li class="menu_font1"><a href="./공지사항.html">공지사항</a></li>
+                            <li class="menu_font1"><a href="./이용안내.html">이용안내</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </nav>
+</header>
+<br>
+    <table border="0" class="category" style="height: 200px">
+        <tr align="center">
+            <th style="background-color: #EAEAEA">CATEGORY ITEM</th>
+        </tr>
+        <tr align="center"><td><a href="./신발.html">신발</a></td></tr>
+        <tr align="center"><td><a href="./옷.html">옷</a></td></tr>
+        <tr align="center"><td><a href="./지갑.html">지갑</a></td></tr>
+         <tr align="center"><td><a href="./가방.html">가방</a></td></tr>
+        <tr align="center"><td><a href="./시계.html">시계</a></td></tr>
+    </table>
+ <div id="line" align="center">
+        <img src="./images/line.jpg" width="65%">
+ 
+   <span>
+    <div><img src="./img/buy1.png" ></div>
+    <hr>
+    </span>
+     <div><img src="./img/buy2.png" width="165" height="66"></div>
+            <table border="5" width="70%" height="60">            
+               <tr>
+                    <th bgcolor="#BDBDBD" width="20%" >이름</th>
+                    <td width="100%" style="text-align:left;">이주영</td>
+                </tr>
+
+                <tr>
+                    <td id="col1" class="em">이메일</td>
+                    <td id="col2">inpgo@bu.ac.kr</td>
+                </tr>
+                <tr>
+                    <td id="col1" class="em">휴대폰번호</td>
+                    <td id="col2"> 010-1234-1234 </td>
+                </tr>
+            </table>
+    <div><img src="./img/buy3.png" width="160" height="50"></div>
+<div>
+      <table border="5" width="70%" height="60%">
+                <tr>
+                    <th bgcolor="#BDBDBD" width="20%">이름</th>
+                    <td width="100%" style="text-align:left;">
+                        <form>
+                            <input type="text" placeholder="이주영" required>
+                            <input type="reset" value="재입력">
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="col1" class="em">이메일</td>
+                    <td id="col2">
+                        <form>
+                            <input type="email" placeholder="abcd@bu.ac.kr" required>
+                            <input type="reset" value="재입력">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="col1" class="em">배송주소</td>
+                    <td id="col2">
+                        <form>
+                            <input type="text" list="city" placeholder="충청남도">
+                            <datalist id="city">
+                                <option value="서울특별시"></option>
+                                <option value="부산광역시"></option>
+                                <option value="대구광역시"></option>
+                                <option value="인천광역시"></option>
+                                <option value="광주광역시"></option>
+                                <option value="대전광역시"></option>
+                                <option value="울산광역시"></option>
+                                <option value="세종특별자치시"></option>
+                                <option value="경기도"></option>
+                                <option value="강원도"></option>
+                                <option value="충청북도"></option>
+                                <option value="충청남도"></option>
+                                <option value="전라북도"></option>
+                                <option value="전라남도"></option>
+                                <option value="경상북도"></option>
+                                <option value="경상남도"></option>
+                                <option value="제주특별자치도"></option>
+
+                            </datalist>
+
+                            <input type="tel" placeholder="천안시 동남구 문암로 76 백석대학교" required>
+                            <input type="reset" value="재입력"> </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="col1" >휴대폰번호</td>
+                    <td id="col2">
+                        <form>
+                            <input type="tel" placeholder="010-1234-1234" required>
+                            <input type="reset" value="재입력">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+
+            <div><img src="./img/buy4.png" width="150" height="40"></div>
+            <table border="5" width="70%" height="60%">
+                <tr>
+                    <th bgcolor="#BDBDBD" width="20%" style="text-align:left;">수요일 5/29일 도착예정 </th>
+
+                </tr>
+
+                <tr>
+                    <td id="col2"> <pre>  커버낫 에코백 수량 1개 /배송비 0원 </pre> </td>
+
+                </tr>
+
+            </table>
+<div><img src="./img/buy5.png" width="140" height="50"></div>
+            <table border="5" width="70%" height="60%">
+                <tr>
+                    <th bgcolor="#BDBDBD" width="20%" style="text-align:center;">총상품가격</th>
+                    <td width="100%" style="text-align:left;">19,000</td>
+                </tr>
+
+                <tr>
+                    <td id="col1" class="em">할인쿠폰</td>
+                    <td id="col2">0원</td>
+                </tr>
+                <tr>
+                    <td id="col1" class="em">배송비</td>
+                    <td id="col2"> 0원 </td>
+                </tr>
+                <tr>
+                    <td id="col1" class="em">적립금</td>
+                    <td id="col2"> <pre>0원           보유 : 0원 <button>적립금사용</button></pre></td>
+                </tr>
+                <tr>
+                    <td id="col1" class="em">총 결제 금액</td>
+                    <td id="col2">19,000원 </td>
+                </tr>
+                         <tr>
+                    <td id="col1">결제 방법</td>
+                    <td id="col2" width="100%"> &nbsp
+                   <br>
+ <label><input type="radio" name="b1" onclick="drawImage()" value="./img/b1.png" checked>계좌이체</label> 
+ <label><input type="radio" name="b1" onclick="drawImage()" value="./img/b2.png"> 신용/체크카드</label> 
+ <label><input type="radio" name="b1" onclick="drawImage()" value="./img/b3.png" >휴대폰</label>
+  <label><input type="radio" name="b1" onclick="drawImage()" value="./img/b4.png" >무통장입금(가상계좌)</label>
+ <img id="fruitimage" src="./img/b1.png" alt=""> 
+  
+                       
+                        <br>
+                        <br> &nbsp
+                        <input type="checkbox" checked> 선택한 결제수단으로 향후 결제 이용에 동의합니다.(선택) </td>
+                </tr>
+                <tr>
+                    <td id="col1" class="em">개인정보 제공안내</td>
+                    <td id="col2"> &nbsp
+                        <input type="checkbox" checked>개인정보 제공에 동의합니다.(필수) </td>
+                </tr>
+            </table>
+
+<br> InPGO는 통신 판매 중개자로서 통신 판매 당사자가 아니므로 일체 책임을 지지 않습니다.
+            <br>
+            <br> 위 주문내역을 확인하였으며, 결제에 동의합니다.
+            <input type="checkbox" checked>동의
+
+            <ul id="order_buttons">
+                <input type="image" src="./img/buy6.png" onclick="showAlert();">
+            </ul>
+
+
+        </div>
+   </div>
+
+
+
+    <!-- 푸터-->
+    <div class="page">
+        <ul class="pagination modal">
+            <li><a href="#" class="first">처음페이지</a></li>
+            <li>
+                <a href="#" class="arrow left">
+                    <</a>
+            </li>
+            <li><a href="#" class="active num">1</a></li>
+            <li><a href="#" class="num">2</a></li>
+            <li><a href="#" class="arrow right">></a></li>
+            <li><a href="#" class="first">끝 페이지</a></li>
+        </ul>
+    </div>
+<footer>
+  <section id="footer_menu_box">
+    <nav id="footer_menu">
+      <ul align="center">
+        <li><a href="./회사소개.html">회사소개</a></li>
+        <li><a href="./이용안내.html">이용안내</a></li>
+        <li><a href="./장바구니.html">장바구니</a></li>
+        <li><a href="./주문조회.html">주문조회</a></li>
+        <li><a href="./적립금.html">적립금</a></li>
+        <li><a href="./이용약관.html">이용약관</a></li>
+        <li><a href="./개인정보보호정책.html">개인정보보호정책</a></li>
+        <li><a href="./고객센터.html">고객센터</a></li>
+      </ul>
+    </nav>
+  </section> <!-- section footer_menu_box -->
+  <section id="footer_box">
+    <div id="footer_logo">
+      <img src="./img/inpgo.jpg" width="100" height="40">
+    </div>
+    <div id="address">
+      <img src="./img/address.png" width="650" height="170">
+    </div>
+  </section> 
+</footer>
+<div id='right_banner'> 
+<a href="./장바구니.html"><img src="./images/side/side1.jpg" title="장바구니"></a>
+<a href="./고객센터.html"><img src="./images/side/side2.jpg" title="고객센터">
+<a href="./마이페이지.html"><img src="./images/side/side3.jpg" title="마이페이지">
+<a href="./쿠폰함.html"><img src="./images/side/side4.jpg" title="쿠폰함"></a>
+<a href="#" class="top"><img src="./images/side/side_top.jpg" alt="onclick" title="위로가기"></a>
+</div>
+</body>
+</html>

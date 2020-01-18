@@ -1,0 +1,317 @@
+﻿* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family:"¸¼Àº °íµñ", "µ¸¿ò";
+    font-size:12px;
+    color:#444444;
+    background-color:#FFFFFF;
+}
+ul {
+    list-style-type:none;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration:none;
+    color:#444444;
+}
+.clear {
+    clear:both;
+}
+
+
+/* ---------- Çì´õ ------------- */
+header {
+    height:128px;
+    font-size: 12px;
+    font-family: "Nanum Gothic", sans-serif;
+
+}
+header #top {
+    width:990px;
+    margin:0 auto;
+
+}
+header #logo {
+    float:left;
+    margin:30px 0 0 0;
+}
+/* °Ë»ö */
+header #search {
+    float:left;
+    color:#000000;
+    margin:40px 0 0 150px;
+}
+header #search #search_title {
+    float:left;
+    margin-top:6px;
+}
+header #search #search_form {
+    float:left;
+}
+header #search #search_form input {
+    width:80px;
+    height:16px;
+    border:0;
+    background-color:#fff;
+    border-bottom:solid 1px #000000;
+    margin-left:5px;
+}
+header #search #search_button {
+    float:left;
+    margin:3px 0 0 3px;
+    
+}
+/* »ó´Ü ¸Þ´º */
+header #top_menu {
+    float:right;    
+    margin-top:45px;
+    
+}
+header #top_menu a:link {
+    font-size: 12px;
+    font-family: "Nanum Gothic", sans-serif;
+    color:#000000;
+}
+header #top_menu a:visited {
+    font-size: 12px;
+    font-family: "Nanum Gothic", sans-serif;
+    color:#000000;
+}
+header #top_menu a:hover {
+   font-size: 12px;
+    font-family: "Nanum Gothic", sans-serif;
+    color:#16a8eb;
+}
+header #top_menu a:active {
+    font-size: 12px;
+    font-family: "Nanum Gothic", sans-serif;
+    color:#000000;
+}
+header #top_menu li {
+    display:inline;
+    margin-left:10px;
+}
+
+
+
+/*----------------------------------------------------
+    ¸ÞÀÎ¸Þ´º 
+-----------------------------------------------------*/
+header #main_menu {
+    height:38px;
+    margin-top:19px;
+    background-color:#fff;
+    border-bottom: solid 1px #FFFFFF;
+}
+header #main_menu .menu_wrapper {
+    width:1000px;
+    margin:auto;
+    padding-top:12px;
+    float:center;
+}
+header #main_menu .menu_wrapper ul._menu{
+    float:left;
+    width:100%;
+}
+header #main_menu .menu_wrapper ul._menu li._main {
+    float:left;
+    width:14%;
+    text-align:center;
+    position:relative;
+}
+header #main_menu li ul._sub {
+    background: #fff;
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:100%;
+    z-index:200;
+    border: solid 1.5px #000000;
+
+}
+header #main_menu a:link,
+header #main_menu a:visited {
+
+}
+header .menu_font
+{
+font-size: 17px;
+font-weight: bold;
+    font-family: "Nanum Gothic", sans-serif;
+    color:#000000;
+}
+header .menu_font1
+{
+font-size: 14px;
+    font-family: "Nanum Gothic", sans-serif;
+    margin-top:10px
+
+}
+
+
+
+/*----------------------------------------------------
+    ¸ÞÀÎ¸Þ´º ¿©±â±îÁö
+-----------------------------------------------------*/
+
+/* ------------- ÇªÅÍ ----------------- */
+footer {
+    height:200px;
+    margin-top:20px;
+}
+footer #footer_menu_box {
+    height:40px;
+    background-color:#000000;
+}
+footer #footer_menu {
+    width:1300px;
+    margin:0 auto;
+    padding-top:15px;
+}
+footer #footer_menu ul {
+    width: 75%;
+    margin-left: auto;
+}
+footer #footer_menu li {
+    display:inline;
+    margin-left:20px;
+}
+footer #footer_menu a:link {
+    color:#ffffff;
+}
+footer #footer_menu a:hover {
+    color:#ffffff;
+}
+footer #footer_menu a:visited {
+    color:#ffffff;
+}
+footer #footer_menu a:active {
+    color:#ffffff;
+}
+footer #footer_box {
+    width:990px;
+    margin:auto;
+}
+footer #footer_box div {
+    float:left;
+}
+footer #footer_box #footer_logo {
+    margin:50px 0 0 30px;
+}
+footer #footer_box #address {
+    margin:25px 0 0 10px;
+    float:right;
+}
+
+/* ------------- ¿À¸¥ÂÊ ¹è³Ê ----------------- */
+#right_banner 
+{   
+    position: fixed;
+    float:left;
+    width:45px;
+    height:180px;
+    margin-right:-760px;
+    top:300px;
+    right:50%;
+    background-color:;
+    border-radius:15px;
+    z-index:20;
+}
+/*Áß°£ ¹öÆ°*/      
+table{
+    margin:auto;
+}  
+#test_btn1{
+    border-radius:8px;
+            margin-right:-1px;
+        }
+#test_btn2{
+    border-radius:8px;   
+            margin-left:0px;
+        }
+#test_btn3{
+    border-radius:8px;  
+            margin-left:0px;
+        }
+#test_btn4{
+    border-radius:8px;   
+            margin-left:0px;
+        }
+#test_btn5{
+    border-radius:8px;   
+            margin-left:0px;
+        }
+#test_btn6{
+    border-radius:8px;  
+            margin-left:0px;
+        }
+#test_btn7{
+    border-radius:8px;   
+            margin-left:0px;
+        }
+#test_btn8{
+    border-radius:8px;  
+            margin-left:0px;
+        }
+#test_btn9{
+            border-radius:8px;   
+            margin-left:0px;
+        }
+#test_btn10{
+            border-radius:8px;   
+            margin-left:0px;
+        }
+#test_btn11{
+            border-radius:8px;    
+            margin-left:0px;
+        }
+#test_btn12{
+            border-radius:8px; 
+            margin-left:0px;
+        }
+#test_btn13{
+            border-radius:8px;   
+            margin-left:0px;
+        }
+#test_btn14{
+            border-radius:8px;    
+            margin-left:0px;
+        }
+#test_btn15{
+            border-radius:8px;    
+            margin-left:0px;
+        }
+#test_btn16{
+            border-radius:8px;    
+            margin-left:0px;
+        }
+#test_btn17{
+            border-radius:8px; 
+            margin-left:0px;
+        }
+#test_btn18{
+            border-radius:8px;   
+            margin-left:0px;
+        }
+#test_btn19{
+            border-radius:8px;    
+            margin-left:0px;
+        }
+#btn_group button{
+            border: 1px solid #f2f0f0;
+            background-color: rgba(0,0,0,0);
+            color: black;
+            padding: 5px;
+        }
+#btn_group button:hover{
+            color:white;
+            background-color: skyblue;
+        }
+.bottomimg
+{
+    width: 90%;
+}

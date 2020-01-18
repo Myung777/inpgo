@@ -1,0 +1,657 @@
+* {
+    margin:0 ; 
+    padding:0;
+}
+body {
+    font-family:"맑은 고딕", "돋움";
+    font-size:12px;
+    color:#444444;
+    background-color:#FFFFFF;
+}
+ul {
+    list-style-type:none;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration:none;
+    color:#444444;
+}
+.clear {
+    clear:both;
+}
+
+
+/* ---------- 헤더 ------------- */
+header {
+    height:128px;
+	font-size: 12px;
+	font-family: "Nanum Gothic", sans-serif;
+
+}
+header #top {
+    width:990px;
+    margin:0 auto;
+
+}
+header #logo {
+    float:left;
+    margin:30px 0 0 0;
+}
+/* 검색 */
+header #search {
+    float:left;
+    color:#000000;
+    margin:40px 0 0 150px;
+}
+header #search #search_title {
+    float:left;
+    margin-top:6px;
+}
+header #search #search_form {
+    float:left;
+}
+header #search #search_form input {
+    width:80px;
+    height:16px;
+    border:0;
+    background-color:#fff;
+    border-bottom:solid 1px #000000;
+    margin-left:5px;
+}
+header #search #search_button {
+    float:left;
+    margin:3px 0 0 3px;
+	
+}
+/* 상단 메뉴 */
+header #top_menu {
+    float:right;	
+    margin-top:45px;
+	
+}
+header #top_menu a:link {
+    font-size: 12px;
+	font-family: "Nanum Gothic", sans-serif;
+    color:#000000;
+}
+header #top_menu a:visited {
+    font-size: 12px;
+	font-family: "Nanum Gothic", sans-serif;
+    color:#000000;
+}
+header #top_menu a:hover {
+   font-size: 12px;
+	font-family: "Nanum Gothic", sans-serif;
+    color:#16a8eb;
+}
+header #top_menu a:active {
+    font-size: 12px;
+	font-family: "Nanum Gothic", sans-serif;
+    color:#000000;
+}
+header #top_menu li {
+    display:inline;
+    margin-left:10px;
+}
+
+
+
+/*----------------------------------------------------
+	메인메뉴 
+-----------------------------------------------------*/
+header #main_menu {
+    height:38px;
+    margin-top:19px;
+    background-color:#fff;
+	border-bottom: solid 1px #000000;
+}
+
+header #main_menu .menu_wrapper {
+    width:1000px;
+    margin:auto;
+    padding-top:12px;
+    float:center;
+}
+header #main_menu .menu_wrapper ul._menu{
+	float:left;
+	width:100%;
+}
+header #main_menu .menu_wrapper ul._menu li._main {
+	float:left;
+	width:16%;
+	text-align:center;
+	position:relative;
+}
+header #main_menu li ul._sub {
+	background: #fff;
+	display:none;
+	height:auto;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	position:absolute;
+	width:100%;
+	z-index:200;
+	border: solid 1.5px #000000;
+
+}
+header #main_menu a:link,
+header #main_menu a:visited {
+
+}
+header .menu_font
+{
+font-size: 17px;
+font-weight: bold;
+	font-family: "Nanum Gothic", sans-serif;
+	color:#000000;
+}
+header .menu_font1
+{
+font-size: 14px;
+	font-family: "Nanum Gothic", sans-serif;
+	margin-top:10px
+
+}
+
+
+
+/*----------------------------------------------------
+	메인메뉴 여기까지
+-----------------------------------------------------*/
+
+/* ------------- 푸터 ----------------- */
+footer {
+    height:200px;
+    margin-top:50px;
+}
+footer #footer_menu_box {
+    height:40px;
+    background-color:#000000;
+}
+footer #footer_menu {
+    width:1300px;
+    margin:0 auto;
+    padding-top:15px;
+}
+footer #footer_menu ul {
+	width: 75%;
+	margin-left: auto;
+}
+footer #footer_menu li {
+    display:inline;
+    margin-left:20px;
+}
+footer #footer_menu a:link {
+    color:#ffffff;
+}
+footer #footer_menu a:hover {
+    color:#ffffff;
+}
+footer #footer_menu a:visited {
+    color:#ffffff;
+}
+footer #footer_menu a:active {
+    color:#ffffff;
+}
+footer #footer_box {
+    width:990px;
+    margin:auto;
+}
+footer #footer_box div {
+    float:left;
+}
+footer #footer_box #footer_logo {
+    margin:50px 0 0 30px;
+}
+footer #footer_box #address {
+    margin:25px 0 0 10px;
+    float:right;
+}
+
+/* ------------- 오른쪽 배너 ----------------- */
+#right_banner 
+{	
+	position: fixed;
+	float:left;
+	width:45px;
+	height:180px;
+	margin-right:-760px;
+	top:300px;
+	right:50%;
+	background-color:;
+	border-radius:15px;
+	z-index:20;
+}
+/* ------------- law ----------------- */
+.content_title
+{
+	color:black;
+	font-weight: bold;
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 30px;
+	margin-left:10px;
+}
+.content_header
+{
+  height:35px;
+  border-left: solid 2px #d01f3c;
+  margin-top: 50px;
+
+}
+.content_title1
+{
+	color:black;
+	font-weight: bold;
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 25px;
+	margin-top: 70px;
+	width:145px;
+	border-bottom: solid 2px #d01f3c;
+}
+.content_title2
+{
+	color:black;
+	font-family: "Nanum Gothic", sans-serif;
+	font-size: 12px;
+	margin-top: 50px;
+}
+.content_header1
+{
+  width: 73%;
+  height:auto;
+  margin-left: auto;
+}
+.content_font
+{
+font-family: "Nanum Gothic", sans-serif;
+margin-top: 20px;
+font-size: 13px;
+}
+/* ------------- login ----------------- */
+#login_box
+{
+margin:auto;
+background: #fff;
+margin-top:100px;
+  width:750px;
+  height:500px;
+  border:solid 1.5px #ececec;
+}
+
+.login1
+{
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
+  margin-top:20px;
+  text-align: center;
+  font-size: 40px;
+  color:black
+}
+
+table 
+{
+margin:auto;
+  margin-top:60px;
+}
+ p.a {
+        font-weight: 400;
+		 font-family: "Nanum Gothic", sans-serif;
+        font-size: 15px;
+      }
+.mem a{
+	color:#535353;
+	font-family: 'Nanum Gothic', sans-serif;
+  }
+
+#btn1 
+{
+  font-family: "Nanum Gothic", sans-serif;
+  width:370px;
+  height:50px;
+  background: #404040;
+  border:solid 1px #404040;
+  color:#fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius:3px;
+  margin-top:10px;
+}
+#btn1:hover {
+    background-color: #535353;
+}
+
+.inph 
+{
+  width:370px;
+  height:35px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.inph1 
+{
+  width:370px;
+  height:35px;
+  margin-top:5px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+input:focus::-webkit-input-placeholder, 
+textarea:focus::-webkit-input-placeholder { /* WebKit browsers */
+color:transparent; } 
+input:focus:-moz-placeholder, 
+textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color:transparent; }
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */
+color:transparent; } 
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
+color:transparent; }
+/* ------------- member ----------------- */
+
+#member_box
+{
+margin:auto;
+background: #fff;
+margin-top:100px;
+  width:750px;
+  height:830px;
+  border:solid 1.5px #ececec;
+}
+
+#btn2
+{
+  font-family: "Nanum Gothic", sans-serif;
+  width:100px;
+  height:25px;
+  background: #404040;
+  border:solid 1px #404040;
+  color:#fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius:15px;
+  margin-top:10px;
+  margin-right:15px;
+}
+#btn2:hover {
+    background-color: #535353;
+}
+.inph_1 
+{
+  width:370px;
+  height:35px;
+  margin-top:20px;
+  margin-right:20px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.inph_2
+{
+  margin-top:20px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.inph2
+{
+  width:150px;
+  height:40px;
+  margin-top:20px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.inph3
+{
+  width:205px;
+  height:35px;
+  margin-top:15px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.inph4
+{
+  margin-top:15px;
+  margin-bottom:10px;
+  font-size: 15px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.inph5
+{
+  margin-top:10px;
+  font-size: 15px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.check 
+{
+  width:370px;
+  height:35px;
+  margin-right:20px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+hr {
+  display:block;border:gray 0 none; border-top:gray 2px dotted; height:2px
+}
+/* ------------- 내정보수정 ----------------- */
+.user1
+{
+  margin-left:250px;
+  margin-top:30px;
+  width:250px;
+  height:250px;
+  cursor: pointer;
+}
+#member_box1
+{
+margin:auto;
+background: #fff;
+margin-top:100px;
+  width:750px;
+  height:950px;
+  border:solid 1.5px #ececec;
+}
+/* ------------- member_find ----------------- */
+#login_box_f
+{
+margin:auto;
+background: #fff;
+margin-top:100px;
+  width:750px;
+  height:370px;
+  border:solid 1.5px #ececec;
+}
+#login_box_f1
+{
+margin:auto;
+background: #fff;
+margin-top:50px;
+  width:750px;
+  height:370px;
+  border:solid 1.5px #ececec;
+}
+/* ------------- mypage ----------------- */
+.login2
+{
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
+  margin-top:20px;
+  text-align: center;
+  font-size: 35px;
+  color:black
+}
+#my
+{
+background: #fff;
+margin-top:10px;
+  width:320px;
+  height:850px;
+  border:solid 1.5px #ececec;
+}
+#my1
+{
+background: #fff;
+margin-top:10px;
+margin-left:50px;
+  width:700px;
+  height:200px;
+  border:solid 1.5px #ececec;
+}
+.table1
+{
+margin:0 auto;
+}
+#my2
+{
+background: #fff;
+margin-top:50px;
+margin-left:50px;
+  width:700px;
+  height:200px;
+  border:solid 1.5px #ececec;
+}
+#my-1
+{
+margin:auto;
+background: #fff;
+  width:270px;
+  height:80px;
+  border-bottom: solid 1.5px #ececec;
+}
+#my-2
+{
+margin:auto;
+margin-top:20px;
+background: #fff;
+  width:270px;
+  height:200px;
+  border-bottom: solid 1.5px #ececec;
+}
+#btn3
+{
+  font-family: "Nanum Gothic", sans-serif;
+  width:120px;
+  height:30px;
+  background-color: #353535;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left:60px;
+  margin-top:100px;
+  border-radius:15px;
+  border:0;
+  outline:0;
+  color:#fff;
+}
+#btn3:hover {
+    background-color: #232323;
+	border:0;
+	outline:0;
+	color:#fff;
+}
+table.top
+{
+margin:auto;
+  margin-top:10px;
+}
+.user
+{
+
+  margin-top:20px;
+  margin-left:40px;
+  width:250px;
+  height:250px;
+}
+.btn
+{
+  width:33px;
+  height:22px;
+  cursor:pointer;
+}
+.btn1
+{
+margin-right:20px;
+  width:120px;
+  height:90px;
+  cursor:pointer;
+}
+.font
+{
+  margin-left:50px;
+  font-size: 13px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+/* ------------- 카테고리 ----------------- */
+.category {
+    background-color:#FFFFFF;
+    color:#000000;
+    text-align:left;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 30px;
+    z-index: 1;
+    position: fixed;
+}
+.category td:hover
+{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+/* ------------- 반품 ----------------- */
+#return_box
+{
+background: #fff;
+margin-top:30px;
+  width:1000px;
+  height:250px;
+  border:solid 1.5px #ececec;
+}
+
+.btn2
+{
+margin-right:20px;
+  width:220px;
+  height:170px;
+  cursor:pointer;
+}
+.login3
+{
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
+  margin-top:20px;
+  font-size: 35px;
+  color:black
+}
+.font1
+{
+  font-size: 12px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.table2
+{
+margin:0;
+margin-top:40px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-top: 1px solid #000000;
+}
+.table3
+{
+margin:0;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+}
+.login4
+{
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
+  margin-left:50px;
+  margin-top:20px;
+  font-size: 17px;
+  color:black
+}
+#topp
+{
+margin-top:15px;
+}

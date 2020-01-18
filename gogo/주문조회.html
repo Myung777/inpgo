@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>인프고 주문조회</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/common_tmp.css">
+    <link rel="stylesheet" type="text/css" href="./css/order.css">
+	<link rel="stylesheet" type="text/css" href="./css/scrollbar.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+<header>
+  <section id="top">
+    <a id="logo" href="./index2.html"><img src="./img/inpgo.jpg" width="100" height="40"></a>
+    <div id="search"> 
+      <div id="search_title">SEARCH</div>
+      <div id="search_form"><input type="text"></div>
+      <div id="search_button"><img src="./img/btn_search.jpg" width="20" height="20"></div>
+    </div>
+    <nav id="top_menu">
+      <ul>
+        <li><a href="./index.html">로그아웃</a></li>
+        <li><a href="./회원가입.html">회원가입</a></li>
+        <li><a href="./마이페이지.html">마이페이지</a></li>
+        <li><a href="./이용안내.html">이용안내</a></li>
+        <li><a href="./고객센터.html">고객센터</a></li>
+      </ul>
+    </nav> 
+    <div class="clear"></div>
+  </section> 
+       <nav id="main_menu">
+            <div class="menu_wrapper">
+                <ul class="_menu">
+                    <li class="_main">
+                       <a href="./옷.html" class="menu_font">옷 </a>
+                        <ul class="_sub">
+                            <li class="menu_font1"><a href="./옷.html">전체보기</a></li>
+                            <li class="menu_font1"><a href="./남성용.html">남성용</a></li>
+                            <li class="menu_font1"><a href="./여성용.html">여성용</a></li>
+                            <li class="menu_font1"><a href="./유아용.html">유아용</a></li>
+                        </ul>
+                    </li>
+                    <li class="_main">
+                        <a href="./시계.html" class="menu_font">시계</a>
+                        <ul class="_sub">
+                            <li class="menu_font1"><a href="./시계.html">전체보기</a></li>
+                            <li class="menu_font1"><a href="./메탈시계.html">메탈시계</a></li>
+                            <li class="menu_font1"><a href="./가죽시계.html">가죽시계</a></li>
+                            <li class="menu_font1"><a href="./스마트워치.html">스마트워치</a></li>
+                        </ul>
+                    </li>
+                    <li class="_main">
+                        <a href="./가방.html" class="menu_font">가방 </a>
+                        <ul class="_sub">
+                            <li class="menu_font1"><a href="./가방.html">전체보기</a></li>
+                            <li class="menu_font1"><a href="./백팩.html">백팩</a></li>
+                            <li class="menu_font1"><a href="./토드백.html">토드백</a></li>
+                            <li class="menu_font1"><a href="./에코백.html">에코백</a></li>
+                        </ul>
+                    </li>
+                    <li class="_main">
+                        <a href="./신발.html" class="menu_font">신발</a>
+                        <ul class="_sub">
+                            <li class="menu_font1"><a href="./신발.html">전체보기</a></li>
+                            <li class="menu_font1"><a href="./구두.html">구두</a></li>
+                            <li class="menu_font1"><a href="./어글리.html">어글리</a></li>
+                            <li class="menu_font1"><a href="./슬리퍼.html">슬리퍼</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="_main">
+                        <a href="./지갑.html" class="menu_font">지갑</a>
+                        <ul class="_sub">
+                            <li class="menu_font1"><a href="./지갑.html">전체보기</a></li>
+                            <li class="menu_font1"><a href="./여성지갑.html">여성지갑</a></li>
+                            <li class="menu_font1"><a href="./남성지갑.html">남성지갑</a></li>
+                            <li class="menu_font1"><a href="./카드지갑.html">카드지갑</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="_main">
+                        <a href="./고객센터.html" class="menu_font">고객센터</a>
+                        <ul class="_sub">
+                            <li class="menu_font1"><a href="./고객센터.html">전체보기</a></li>
+                            <li class="menu_font1"><a href="./찾아오는길.html">찾아오는길</a></li>
+                            <li class="menu_font1"><a href="./공지사항.html">공지사항</a></li>
+                            <li class="menu_font1"><a href="./이용안내.html">이용안내</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </nav>
+</header>
+
+<table border="1" class="mytable" >
+<tr align="center">
+  <td rowspan="4" width="60px"><img src="./img/my.jpg"></td>
+
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+</tr>
+<tr align="center">
+  <td  width="250px"><h2>이주영 회원님</h2></td>
+  <td><h4>포인트</h4></td>
+  <td><h4>적립금</h4></td>
+  <td><h4>쿠폰</h4></td>
+  <td><h4>쪽지</h4></td>
+</tr>
+<tr align="center">
+  <td  width="50px">[회원정보변경]</td>
+  <td><h3>32155점</h3></td>
+  <td><h3>6589원</h3></td>
+  <td><h3>13장</h3></td>
+  <td><h3>0개</h3></td>
+</tr>
+</table>
+<br>
+    <div id="line" align="center">
+    <img src="./images/line.jpg" width="80%">
+  </div>
+
+<div id="btn_group" align=center>
+        <a href="./장바구니.html"><button id="test_btn1">장바구니</button></a>
+        <a href="./주문조회.html"><button id="test_btn2">주문조회</button></a>
+        <button id="test_btn3">구매후기</button>
+        <button id="test_btn4">상품 문의</button>
+        <a href="./적립금.html"><button id="test_btn5">적립금</button></a>
+        <a href="./쿠폰함.html"><button id="test_btn6">쿠폰</button></a>
+        <button id="test_btn7">배송지</button>
+        <button id="test_btn8">반품</button>
+  
+  </div>
+  <div id="line" align="center">
+    <img src="./images/line.jpg" width="80%">
+  </div>
+    <table border="0" class="orderstate">
+      <tr align="left">
+        <td width="100px"><b>주문상태</b></td>
+        <td>
+          <select name="주문상태" style="width: 150px">
+            <option value="-"selected="selected">-</option>
+            <option value="주문접수">주문접수</option>
+            <option value="입금확인">입금확인</option>
+            <option value="배송준비중">배송준비중</option>
+            <option value="발송완료">발송완료</option>
+            <option value="구매확정">구매확정</option>
+            <option value="주문취소">주문취소</option>
+            <option value="교환 요청">교환요청</option>
+            <option value="교환 처리 중">교환요청</option>
+            <option value="교환 완료">교환 완료</option>
+            <option value="환불 요청">환불 요청</option>
+            <option value="환불 처리 중">환불 처리 중</option>
+            <option value="환불 완료">환불 완료</option>
+          </select>
+        </td> 
+      </tr>
+    </table>
+  <div id="line" align="center">
+    <img src="./images/line.jpg" width="80%">
+  </div>
+      <table border="1" class="orderpage">
+        <caption style="text-align: left;"><b>주문 조회(1건)<br>&nbsp;</b></caption>
+        <tr align="center">
+            <th>번호</th>
+            <th>상품정보(옵션/수량)</th>
+            <th>주문 일자</th>
+            <th>주문번호</th>
+            <th>결제금액<br>(결제방법)</th>
+            <th>적립금</th>
+            <th>주문 상태</th>
+            <th>반품 상태</th>
+            <th>구매 결정</th>
+        </tr>
+        <tr align="center">
+            <td>1</td>
+            <td>
+              <table border="0">
+                <tr>
+                  <td rowspan="3"><img src="./img/triples.jpg"></td>
+                  <td><b>[발렌시아가]</b></td>
+                </tr>
+                <tr>
+                  <td>트리플S 노초(노초, 옐로우, 그린)</td>
+                </tr>
+                <tr>
+                  <td>옵션 : 36 / 수량 : 1</td>
+                </tr>
+              </table>
+            </td>
+            <td>2019.05.05</td>
+            <td>2019050500001</td>
+            <td>1,290,000원</td>
+            <td>12,900원</td>
+            <td>구매확정<br><button id="ship">배송조회</button></td>
+            <td>구매확정</td>
+            <td></td>
+        </tr>
+    </table>
+        <div class="page">
+        <ul class="pagination modal">
+            <li><a href="#" class="first">처음페이지</a></li>
+            <li>
+                <a href="#" class="arrow left">
+                    <</a>
+            </li>
+            <li><a href="#" class="active num">1</a></li>
+            <li><a href="#" class="arrow right">></a></li>
+            <li><a href="#" class="first">끝 페이지</a></li>
+        </ul>
+    </div>
+<footer>
+  <section id="footer_menu_box">
+    <nav id="footer_menu">
+      <ul align="center">
+        <li><a href="./회사소개.html">회사소개</a></li>
+        <li><a href="./이용안내.html">이용안내</a></li>
+        <li><a href="./장바구니.html">장바구니</a></li>
+        <li><a href="./주문조회.html">주문조회</a></li>
+        <li><a href="./적립금.html">적립금</a></li>
+        <li><a href="./이용약관.html">이용약관</a></li>
+        <li><a href="./개인정보보호정책.html">개인정보보호정책</a></li>
+        <li><a href="./고객센터.html">고객센터</a></li>
+      </ul>
+    </nav>
+  </section> <!-- section footer_menu_box -->
+  <section id="footer_box">
+    <div id="footer_logo">
+      <img src="./img/inpgo.jpg" width="100" height="40">
+    </div>
+    <div id="address">
+      <img src="./img/address.png" width="650" height="170">
+    </div>
+  </section> 
+</footer>
+<div id='right_banner'> 
+<a href="./장바구니.html"><img src="./images/side/side1.jpg" title="장바구니"></a>
+<a href="./고객센터.html"><img src="./images/side/side2.jpg" title="고객센터"></a>
+<a href="./마이페이지.html"><img src="./images/side/side3.jpg" title="마이페이지"></a>
+<a href="./쿠폰함.html"><img src="./images/side/side4.jpg" title="쿠폰함"></a>
+<a href="#" class="top"><img src="./images/side/side_top.jpg" alt="onclick" title="위로가기"></a>
+</div>
+</body>
+</html>
